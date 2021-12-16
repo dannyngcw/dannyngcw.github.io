@@ -16,7 +16,7 @@ const Header = () => {
             </Row>
           </Navbar.Brand>
           <Nav className="me-left">
-            <Nav.Link active={pathname.startsWith('/')} style={{ marginRight: 10 }}><Link to="/" className="navbar-link">About me</Link></Nav.Link>
+            <Nav.Link active={pathname.startsWith('/') && !pathname.startsWith('/resume') && !pathname.startsWith('/projects') && !pathname.startsWith('/contact')} style={{ marginRight: 10 }}><Link to="/" className="navbar-link">About me</Link></Nav.Link>
             <Nav.Link active={pathname.startsWith('/resume')} style={{ marginRight: 10 }}><Link to="/resume" className="navbar-link">Resume</Link></Nav.Link>
             <Nav.Link active={pathname.startsWith('/projects')} style={{ marginRight: 10 }}><Link to="/projects" className="navbar-link">Projects</Link></Nav.Link>
             <Nav.Link active={pathname.startsWith('/contact')} style={{ marginRight: 10 }}><Link to="/contact"className="navbar-link">Contact</Link></Nav.Link>
