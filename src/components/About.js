@@ -14,7 +14,7 @@ const About = () => {
 
   return (
     <CSSTransition in={window.location.pathname.startsWith('/about')} classNames="fade" timeout={1600}>
-      <div style={{ backgroundImage:`url(${bgimage})`, height: "100vh", margin: 0, padding: 0, backgroundAttachment: 'fixed' }}>
+      <div className="background-img" style={{ backgroundImage:`url(${bgimage})`, height: "100vh", margin: 0, padding: 0, backgroundAttachment: 'fixed' }}>
         <Container className="d-flex vh-100">
           <Row className="m-auto align-self-center">
             <Col xs={{ span: 3, offset: 2 }}>

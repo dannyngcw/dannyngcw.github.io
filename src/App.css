@@ -150,6 +150,12 @@
   height: 60px;
 }
 
+.background-img{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 div{
   padding: 0;
 }
