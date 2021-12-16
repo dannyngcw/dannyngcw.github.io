@@ -17,7 +17,7 @@ const About = () => {
       <div style={{ backgroundImage:`url(${bgimage})`, height: "100vh", margin: 0, padding: 0 }}>
         <Container className="d-flex vh-100">
           <Row className="m-auto align-self-center">
-            <Col md={{ span: 3, offset: 2 }}>
+            <Col xs={{ span: 3, offset: 2 }}>
               <Card bg="secondary" text="dark" className="card card-shadow" style={{ width: '20rem', height: '26rem' }}>
                 <Card.Body className="align-self-center">
                   <Card.Img src={image} className="image mt-2" />
@@ -35,7 +35,7 @@ const About = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col className="card" md={4}>
+            <Col className="card" xs={4}>
               <Card bg="light" text="dark" style={{ height: '26rem', paddingLeft: 20}}>
                 <Card.Body>
                   <Card.Text style={{ fontSize: 78 }}><b>Hello</b></Card.Text>
