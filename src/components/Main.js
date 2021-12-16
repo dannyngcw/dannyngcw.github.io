@@ -18,11 +18,11 @@ const Main = () => {
         <TransitionGroup>
           <ScrollToTop />
             <Switch>
-              <Route path='/about' component={About} />
+              <Route exact path='/' component={About} />
               <Route path='/resume' component={Resume} />
               <Route path='/projects' component={Projects} />
               <Route path='/contact' component={Contact} />
-              <Redirect to='/about' />
+              <Redirect to='/' />
             </Switch>
         </TransitionGroup>
         <Footer />

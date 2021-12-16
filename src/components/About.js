@@ -13,7 +13,7 @@ const About = () => {
   }, [])
 
   return (
-    <CSSTransition in={window.location.pathname.startsWith('/about')} classNames="fade" timeout={1600}>
+    <CSSTransition in={window.location.pathname.startsWith('/')} classNames="fade" timeout={1600}>
       <div className="background-img" style={{ backgroundImage:`url(${bgimage})`, height: "100vh", margin: 0, padding: 0, backgroundAttachment: 'fixed' }}>
         <Container className="d-flex vh-100">
           <Row className="m-auto align-self-center">
