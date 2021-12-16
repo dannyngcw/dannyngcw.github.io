@@ -1,26 +1,19 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: Nunito;
+  font-weight: normal;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #020202;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
   font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header a {
+  padding: 10px;
+  text-decoration: none;
   color: white;
 }
 
@@ -28,11 +21,146 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  background-color: #D1C4E9;
+  margin:0px auto;
+  padding: 20px 0px 20px 0px;
+}
+
+.padheader {
+  padding: 40px;
+  position: sticky;
+}
+
+.footercontainer {
+  background-color: #f8f9fa;
+  font-size: 15px;
+  color: black;
+  padding: 40px;
+}
+
+.contain {
+  padding: 0px 0px 0px 40px;
+}
+
+.contain p a {
+  text-decoration: none;
+  color: black;
+}
+
+.navtitle {
+  font-size:x-large;
+}
+
+.name {
+  font-size: large;
+  padding: 5px;
+}
+
+.navbar-link, .navbar-link:hover{
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.card{
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.padding{
+  border-bottom: 2px solid #212529;
+}
+
+.name-container{
+  width: 30px;
+}
+
+.image{
+  height: 240px;
+  width: 180px;
+  clip-path: circle(42% at 50% 41%);
+  overflow: hidden;
+}
+
+.card-shadow{
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+.button{
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+.button-secondary{
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
+.button-secondary:hover{
+  color: white;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+ opacity: 1;
+ transition: opacity 2000ms;
+}
+
+.fade-exit {
+ opacity: 1;
+}
+
+.fade-exit-active {
+ opacity: 0;
+ transition: opacity 2000ms;
+}
+
+.contact-box {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.contact-box:hover {
+  border: none;
+  border-bottom: 1px solid #0d6efd;
+}
+
+.error {
+  border: none;
+  border-bottom: 1px solid red;
+}
+
+.project-marker{
+  color: #0d6efd;
+  border-left: 10px solid #0d6efd;
+  padding-left: 15px;
+  height: 60px;
+}
+
+div{
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: local('Nunito'),url(./fonts/Nunito-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-weight: 500;
+  src: local('Nunito'),url(./fonts/Nunito-Black.ttf) format('truetype');
 }
