@@ -29,7 +29,7 @@ const Resume = () => {
               </Card.Title>
             </Col>
             <Col>
-              <a href={myPDF} download="My_File.pdf" className="nav-link float-end" style={{ fontSize: 18, padding: "10px 0 0 0" }}><Button className="button"><b>Download Resume</b></Button></a>
+              <a href={myPDF} download="Danny_resume.pdf" className="nav-link float-end" style={{ fontSize: 18, padding: "10px 0 0 0" }}><Button className="button"><b>Download Resume</b></Button></a>
             </Col>
             <Col></Col>
           </Row>
