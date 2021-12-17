@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.3a30251b.chunk.css",
-    "main.js": "/static/js/main.467ce456.chunk.js",
-    "main.js.map": "/static/js/main.467ce456.chunk.js.map",
+    "main.css": "/static/css/main.4e48acdb.chunk.css",
+    "main.js": "/static/js/main.69398e10.chunk.js",
+    "main.js.map": "/static/js/main.69398e10.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.9c136628.js",
     "runtime-main.js.map": "/static/js/runtime-main.9c136628.js.map",
     "static/css/2.40abe5ac.chunk.css": "/static/css/2.40abe5ac.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.26097187.chunk.js.map": "/static/js/3.26097187.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.40abe5ac.chunk.css.map": "/static/css/2.40abe5ac.chunk.css.map",
-    "static/css/main.3a30251b.chunk.css.map": "/static/css/main.3a30251b.chunk.css.map",
+    "static/css/main.4e48acdb.chunk.css.map": "/static/css/main.4e48acdb.chunk.css.map",
     "static/js/2.6213766e.chunk.js.LICENSE.txt": "/static/js/2.6213766e.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/Nunito-Regular.e4eb7682.ttf",
     "static/media/about.daf8129e.png": "/static/media/about.daf8129e.png",
@@ -27,7 +27,7 @@
     "static/js/runtime-main.9c136628.js",
     "static/css/2.40abe5ac.chunk.css",
     "static/js/2.6213766e.chunk.js",
-    "static/css/main.3a30251b.chunk.css",
-    "static/js/main.467ce456.chunk.js"
+    "static/css/main.4e48acdb.chunk.css",
+    "static/js/main.69398e10.chunk.js"
   ]
 }
