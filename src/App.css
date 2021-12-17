@@ -180,3 +180,9 @@ div{
     width: 400px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .small-screen{
+    width: 100px;
+  }
+}

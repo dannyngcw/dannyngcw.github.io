@@ -9,12 +9,12 @@ const Header = () => {
       <Navbar collapseOnSelect bg="light" expand="sm" className="padheader fixed-top">
         <Container fluid>
           <Navbar.Brand href="#home" className="navtitle">
-            <Row>
+            <Row className="small-screen">
               <Col className="justify-content-center"><b>Danny Ng</b></Col>
               <Col className="name"> &nbsp;/ &nbsp;Final Year Student</Col>
             </Row>
           </Navbar.Brand>
-          <Navbar.Toggle  aria-controls='responsive-navbar-nav'/>
+          <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
           <Navbar.Collapse id="responsive-navbar-nav" style={{justifyContent: 'flex-end'}}>
             <Nav>
               <Nav.Link active={pathname.startsWith('/') && !pathname.startsWith('/resume') && !pathname.startsWith('/projects') && !pathname.startsWith('/contact')} style={{ marginRight: 10 }}><Link to="/" className="navbar-link">About me</Link></Nav.Link>
