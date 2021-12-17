@@ -156,6 +156,7 @@
   -o-background-size: cover;
   background-size: cover;
 }
+
 div{
   padding: 0;
 }
@@ -169,4 +170,13 @@ div{
   font-family: 'Nunito';
   font-weight: 500;
   src: local('Nunito'),url(./fonts/Nunito-Black.ttf) format('truetype');
+}
+
+@media screen and (min-width: 500px) and (max-width: 1100px) {
+  .hide{
+    margin-left: 100px;
+  }
+  .width{
+    width: 400px;
+  }
 }

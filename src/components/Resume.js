@@ -24,7 +24,7 @@ const Resume = () => {
           </Row>
           <Row className="mb-3">
             <Col></Col>
-            <Col xs={3} className="mt-3">
+            <Col sm={3} className="mt-3">
               <Card.Title style={{ fontSize: 26 }}>Work Experience
               </Card.Title>
             </Col>
@@ -35,7 +35,7 @@ const Resume = () => {
           </Row>
           <Row>
             <Col></Col>
-            <Col xs={6} className="m-3">
+            <Col sm={6} className="m-3">
               <Card className="card-shadow" style={{ padding: "10px 5px 10px 40px" }}>
                 <Card.Text style={{ margin: 0, color: '#0d6efd', fontSize: 18 }}><b>May 2021 - Jul 2021</b></Card.Text>
                 <Card.Text style={{ margin: 0, fontSize: 14}}><b>Software Engineer Intern</b></Card.Text>
@@ -52,7 +52,7 @@ const Resume = () => {
           </Row>
           <Row>
             <Col></Col>
-            <Col xs={6} className="m-3">
+            <Col sm={6} className="m-3">
               <Card className="card-shadow" style={{ padding: "10px 5px 10px 40px" }}>
                 <Card.Text style={{ margin: 0, color: '#0d6efd', fontSize: 18 }}><b>Aug 2020 - Dec 2020</b></Card.Text>
                 <Card.Text style={{ margin: 0, fontSize: 14}}><b>Intern</b></Card.Text>
@@ -68,14 +68,14 @@ const Resume = () => {
           </Row>
           <Row className="mb-3">
             <Col></Col>
-            <Col xs={6} className="mt-5">
+            <Col sm={6} className="mt-5">
               <Card.Title style={{ fontSize: 26 }}>Education</Card.Title>
             </Col>
             <Col></Col>
           </Row>
           <Row>
             <Col></Col>
-            <Col xs={6} className="m-3">
+            <Col sm={6} className="m-3">
               <Card className="card-shadow" style={{ padding: "10px 5px 10px 40px" }}>
                 <Card.Text style={{ margin: 0, color: '#0d6efd', fontSize: 18 }}><b>2019 - Present</b></Card.Text>
                 <Card.Text style={{ margin: 0, fontSize: 14}}><b>Nanyang Technological University</b></Card.Text>
@@ -86,7 +86,7 @@ const Resume = () => {
           </Row>
           <Row>
             <Col></Col>
-            <Col xs={6} className="m-3">
+            <Col sm={6} className="m-3">
               <Card className="card-shadow" style={{ padding: "10px 5px 10px 40px" }}>
                 <Card.Text style={{ margin: 0, color: '#0d6efd', fontSize: 18 }}><b>2014 - 2017</b></Card.Text>
                 <Card.Text style={{ margin: 0, fontSize: 14}}><b>Singapore Polytechnic</b></Card.Text>
@@ -97,14 +97,14 @@ const Resume = () => {
           </Row>
           <Row className="mb-3">
             <Col></Col>
-            <Col xs={6} className="mt-5">
+            <Col sm={6} className="mt-5">
               <Card.Title style={{ fontSize: 26 }}>Skillset</Card.Title>
             </Col>
             <Col></Col>
           </Row>
           <Row style={{ paddingBottom: 100}}>
             <Col></Col>
-            <Col xs={6} className="m-3">
+            <Col sm={6} className="m-3">
               <Card className="card-shadow" style={{ padding: "10px 5px 10px 25px" }}>
                 <ul>
                   <li><b>Programming Languages</b>: Solidity, HTML, CSS, Javascript, Jquery, Python, SQL</li>

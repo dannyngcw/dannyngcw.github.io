@@ -17,7 +17,7 @@ const About = () => {
       <div className="background-img" style={{ backgroundImage:`url(${bgimage})`, height: "100vh", margin: 0, padding: 0, backgroundAttachment: 'fixed' }}>
         <Container className="d-flex vh-100">
           <Row className="m-auto align-self-center">
-            <Col xs={{ span: 3, offset: 2 }}>
+            <Col className="card" sm={{ span: 3, offset: 2 }} md={3} style={{marginRight: -5}}>
               <Card bg="secondary" text="dark" className="card card-shadow" style={{ width: '20rem', height: '26rem' }}>
                 <Card.Body className="align-self-center">
                   <Card.Img src={image} className="image mt-2" />
@@ -35,9 +35,9 @@ const About = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col className="card" xs={4}>
-              <Card bg="light" text="dark" style={{ height: '26rem', paddingLeft: 20}}>
-                <Card.Body>
+            <Col className="card hide" sm={4}>
+              <Card className="width" bg="light" text="dark" style={{ height: '26rem', paddingLeft: 20}}>
+                <Card.Body> 
                   <Card.Text style={{ fontSize: 78 }}><b>Hello</b></Card.Text>
                   <Card.Text style={{ fontSize: 28 }}><b>I am Danny Ng!</b></Card.Text>
                   <Button variant="primary" className="button"><Link to="/resume" className="navbar-link"><b>Resume</b></Link></Button>

@@ -67,7 +67,7 @@ const Contact = () => {
             </Row>
             <Row>
               <Col></Col>
-              <Col xs={6} className="mb-5">
+              <Col sm={6} className="mb-5">
                 <Card className="card-shadow">
                   <Form style={{ margin: 50}} onSubmit={handleSubmit}>
                     <Row className="mb-3">
