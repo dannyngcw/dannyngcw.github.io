@@ -8,7 +8,7 @@ const Header = () => {
     return(
       <Navbar collapseOnSelect bg="light" expand="sm" className="padheader fixed-top">
         <Container fluid>
-          <Navbar.Brand href="#home" className="navtitle">
+          <Navbar.Brand href="/" className="navtitle">
             <Row className="small-screen">
               <Col className="justify-content-center"><b>Danny Ng</b></Col>
               <Col className="name"> &nbsp;/ &nbsp;Final Year Student</Col>
