@@ -87,6 +87,11 @@
   box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
 }
 
+.small-button{
+  border-radius: 10px;
+  padding: 0 10px 0 10px;
+}
+
 .button{
   border-radius: 20px;
   padding: 5px 20px 5px 20px;
@@ -182,6 +187,10 @@ div{
 }
 
 @media screen and (max-width: 500px) {
+  .hidden{
+    visibility: hidden;
+  }
+
   .small-screen{
     width: 100px;
   }
