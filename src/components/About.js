@@ -23,7 +23,7 @@ const About = () => {
   }, [width]);
 
   const CardComponent = () => {
-    if (width < 500){
+    if (width < 400){
       return (
         <Col className="card hide" sm={4}>
           <Card.Body>
@@ -37,7 +37,7 @@ const About = () => {
         </Col>
       )
     } 
-    if (width > 500 && width < 800 ) {
+    if (width > 400 && width < 800 ) {
       return(
         <Col className="card hide" sm={5}>
           <Card.Body>
@@ -73,23 +73,22 @@ const About = () => {
   }
 
   const MainCardComponent = () => {
-    if (width < 500) {
+    if (width < 400) {
       return (
-        <Col className="card" sm={{ span: 3, offset: 2 }} md={3} style={{ marginRight: -5 }}>
-          <Card bg="secondary" text="dark" className="card card-shadow" style={{ width: '20rem', height: '26rem' }}>
+        <Col className="card" sm={{ span: 3, offset: 2 }} md={3}>
+          <Card bg="secondary" text="dark" className="card card-shadow" style={{ width: '20rem', height: '22rem' }}>
             <Card.Body className="align-self-center">
-              <Card.Img src={image} className="image mt-2" />
+              <Card.Img src={image} className="image" />
               <Card.Title as="h4" className="text-center">Danny Ng</Card.Title>
               <Container>
                 <Row>
                   <Col></Col>
                   <Col>
-                    <Card.Text className="padding mt-3"></Card.Text>
+                    <Card.Text className="padding mt-2"></Card.Text>
                   </Col>
                   <Col></Col>
                 </Row>
               </Container>
-              {/* <Card.Text className="text-center mt-4" style={{ fontSize: 18 }}>Final Year Student</Card.Text> */}
               <div className="mt-4">
                 <Button variant="primary" className="small-button"><Link to="/resume" className="navbar-link"><b>Resume</b></Link></Button>
                 <Button variant="primary" className="small-button button-secondary" style={{ marginLeft: 10 }}><Link to="/projects" className="navbar-link"><b>Projects</b></Link></Button>
