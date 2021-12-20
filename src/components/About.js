@@ -23,7 +23,7 @@ const About = () => {
   }, [width]);
 
   const CardComponent = () => {
-    if (width < 400){
+    if (width < 500){
       return (
         <Col className="card hide" sm={4}>
           <Card.Body>
@@ -37,19 +37,21 @@ const About = () => {
         </Col>
       )
     } 
-    if (width > 400 && width < 800 ) {
+    if (width > 500 && width < 800 ) {
       return(
         <Col className="card hide" sm={5}>
-          <Card.Body>
-            <Card.Text style={{ fontSize: 60 }}><b>Hello</b></Card.Text>
-            <Card.Text style={{ fontSize: 20 }}><b>I am Danny Ng!</b></Card.Text>
-            <Button variant="primary" className="button"><Link to="/resume" className="navbar-link"><b>Resume</b></Link></Button>
-              <Button variant="primary" className="button button-secondary" style={{ marginLeft: 10 }}><Link to="/projects" className="navbar-link"><b>Projects</b></Link></Button>
-            <Card.Text className="mt-4">
-              I am a student at Nanyang Technological University studying Electrical and Electronic Engineering. Started delving into programming in mid 2020, and always been
-              trying to improve myself in every aspect.
-            </Card.Text>
-          </Card.Body>
+          <Card className="width" bg="light" text="dark" style={{ height: '26rem', paddingLeft: 20 }}>
+            <Card.Body>
+              <Card.Text style={{ fontSize: 60 }}><b>Hello</b></Card.Text>
+              <Card.Text style={{ fontSize: 20 }}><b>I am Danny Ng!</b></Card.Text>
+              <Button variant="primary" className="button"><Link to="/resume" className="navbar-link"><b>Resume</b></Link></Button>
+                <Button variant="primary" className="button button-secondary" style={{ marginLeft: 10 }}><Link to="/projects" className="navbar-link"><b>Projects</b></Link></Button>
+              <Card.Text className="mt-4">
+                I am a student at Nanyang Technological University studying Electrical and Electronic Engineering. Started delving into programming in mid 2020, and always been
+                trying to improve myself in every aspect.
+              </Card.Text>
+            </Card.Body>
+          </Card>
         </Col>
       )
     } else {
@@ -73,7 +75,7 @@ const About = () => {
   }
 
   const MainCardComponent = () => {
-    if (width < 400) {
+    if (width < 500) {
       return (
         <Col className="card" sm={{ span: 3, offset: 2 }} md={3}>
           <Card bg="secondary" text="dark" className="card card-shadow" style={{ width: '20rem', height: '22rem' }}>
@@ -145,8 +147,8 @@ const About = () => {
 
   return (
     <CSSTransition in={window.location.pathname.startsWith('/')} classNames="fade" timeout={1600}>
-      <div className="background-img" style={{ backgroundImage:`url(${bgimage})`, height: "100vh", margin: 0, padding: 0, backgroundAttachment: 'fixed' }}>
-        <Container className="d-flex vh-100">
+      <div className={width < 700 ? "background-img" : "background-img vh-100"} style={{ backgroundImage:`url(${bgimage})`, margin: 0, padding: 0, backgroundAttachment: 'fixed' }}>
+        <Container className="d-flex vh-100" className={width < 700 ? "d-flex" : "d-flex vh-100"}>
           <Row className="m-auto align-self-center">
             <MainCardComponent />
             <CardComponent />
