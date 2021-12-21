@@ -66,7 +66,7 @@ const Projects = () => {
             <Col></Col>
             <Col className="card card-shadow" sm={4}>
               <Card>
-                <Card.Title className="mt-5 mb-3 project-marker" style={{ fontSize: 18 }}>Improving Deep Learning Accuracy by Data Augmentation Using Generative Adversarial Networks</Card.Title>
+                <Card.Title className="mt-5 mb-3 project-marker" style={{ fontSize: 18 }}>Improving Deep Learning Accuracy by Data Augmentation Using GAN</Card.Title>
                 <Card.Text className="m-4">This was a school group project for a module. We used different GAN images and tested out with VGG16 and EfficientNetB7.</Card.Text>
               </Card>
             </Col>

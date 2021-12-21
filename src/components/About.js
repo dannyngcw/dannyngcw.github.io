@@ -39,7 +39,7 @@ const About = () => {
     } 
     if (width > 500 && width < 800 ) {
       return(
-        <Col className="card hide" sm={5}>
+        <Col className="card margin-left" sm={5}>
           <Card className="width" bg="light" text="dark" style={{ height: '26rem', paddingLeft: 20 }}>
             <Card.Body>
               <Card.Text style={{ fontSize: 60 }}><b>Hello</b></Card.Text>
@@ -56,7 +56,7 @@ const About = () => {
       )
     } else {
       return (
-        <Col className="card hide" sm={4}>
+        <Col className="card margin-left" sm={4}>
           <Card className="width" bg="light" text="dark" style={{ height: '26rem', paddingLeft: 20 }}>
             <Card.Body>
               <Card.Text style={{ fontSize: 78 }}><b>Hello</b></Card.Text>
@@ -102,7 +102,7 @@ const About = () => {
     } 
     if (width > 500 && width < 800 ) {
       return (
-        <Col className="card" sm={{ span: 3, offset: 2 }} md={3} style={{ marginRight: -5 }}>
+        <Col className="card" sm={3} md={3} style={{ marginRight: -5 }}>
         <Card bg="secondary" text="dark" className="card card-shadow" style={{ width: '20rem', height: '26rem' }}>
           <Card.Body className="align-self-center">
             <Card.Img src={image} className="image mt-2" />
@@ -148,7 +148,7 @@ const About = () => {
   return (
     <CSSTransition in={window.location.pathname.startsWith('/')} classNames="fade" timeout={1600}>
       <div className={width < 700 ? "background-img" : "background-img vh-100"} style={{ backgroundImage:`url(${bgimage})`, margin: 0, padding: 0, backgroundAttachment: 'fixed' }}>
-        <Container className="d-flex vh-100" className={width < 700 ? "d-flex" : "d-flex vh-100"}>
+        <Container className={width < 700 ? "d-flex" : "d-flex vh-100"}>
           <Row className="m-auto align-self-center">
             <MainCardComponent />
             <CardComponent />
