@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Card, Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group'
+import useWindowSize from './useWindowSize';
 import image from '../images/profileimage.jpg'
 import bgimage from '../images/about.png'
 import 'bootstrap/dist/css/bootstrap.css';
@@ -12,20 +13,12 @@ const About = () => {
     document.title = "About me | Danny Ng"
   }, [])
 
-  const [width, setWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    function handleResize() {
-      setWidth(window.innerWidth);
-    }
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [width]);
+  const size = useWindowSize();
 
   const CardComponent = () => {
-    if (width < 500){
+    if (size.width < 700) {
       return (
-        <Col className="card hide" sm={4}>
+        <Col className="card" sm={{ span: 5, offset: 5 }}>
           <Card.Body>
             <Card.Text style={{ fontSize: 40 }}><b>Hello</b></Card.Text>
             <Card.Text style={{ fontSize: 18 }}><b>I am Danny Ng!</b></Card.Text>
@@ -37,7 +30,7 @@ const About = () => {
         </Col>
       )
     } 
-    if (width > 500 && width < 800 ) {
+    if (size.width > 700 && size.width < 800 ) {
       return(
         <Col className="card margin-left" sm={5}>
           <Card className="width" bg="light" text="dark" style={{ height: '26rem', paddingLeft: 20 }}>
@@ -75,7 +68,7 @@ const About = () => {
   }
 
   const MainCardComponent = () => {
-    if (width < 500) {
+    if (size.width < 700) {
       return (
         <Col className="card" sm={{ span: 3, offset: 2 }} md={3}>
           <Card bg="secondary" text="dark" className="card card-shadow" style={{ width: '20rem', height: '22rem' }}>
@@ -100,7 +93,7 @@ const About = () => {
         </Col>
       )
     } 
-    if (width > 500 && width < 800 ) {
+    if (size.width > 700 && size.width < 800 ) {
       return (
         <Col className="card" sm={3} md={3} style={{ marginRight: -5 }}>
         <Card bg="secondary" text="dark" className="card card-shadow" style={{ width: '20rem', height: '26rem' }}>
@@ -147,8 +140,8 @@ const About = () => {
 
   return (
     <CSSTransition in={window.location.pathname.startsWith('/')} classNames="fade" timeout={1600}>
-      <div className={width < 700 ? "background-img" : "background-img vh-100"} style={{ backgroundImage:`url(${bgimage})`, margin: 0, padding: 0, backgroundAttachment: 'fixed' }}>
-        <Container className={width < 700 ? "d-flex" : "d-flex vh-100"}>
+      <div className={size.width < 700 || size.height < 400 ? "background-img" : "background-img vh-100"} style={{ backgroundImage:`url(${bgimage})`, margin: 0, padding: 0, backgroundAttachment: 'fixed' }}>
+        <Container className={size.width < 700 || size.height < 400 ? "d-flex" : "d-flex vh-100"}>
           <Row className="m-auto align-self-center">
             <MainCardComponent />
             <CardComponent />
