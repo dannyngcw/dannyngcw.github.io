@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Container, Row, Col, Button } from 'react-bootstrap';
+import { Card, Container, Row, Col, Button, CardGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group'
 import useWindowSize from './useWindowSize';
@@ -16,87 +16,9 @@ const About = () => {
   const size = useWindowSize();
 
   const CardComponent = () => {
-    if (size.width < 700) {
-      return (
-        <Col className="card" sm={{ span: 5, offset: 5 }}>
-          <Card.Body>
-            <Card.Text style={{ fontSize: 40 }}><b>Hello</b></Card.Text>
-            <Card.Text style={{ fontSize: 18 }}><b>I am Danny Ng!</b></Card.Text>
-            <Card.Text className="mt-4" style={{ fontSize: 14 }}>
-              I am a student at Nanyang Technological University studying Electrical and Electronic Engineering. Started delving into programming in mid 2020, and always been
-              trying to improve myself in every aspect.
-            </Card.Text>
-          </Card.Body>
-        </Col>
-      )
-    } 
-    if (size.width > 700 && size.width < 800 ) {
-      return(
-        <Col className="card margin-left" sm={5}>
-          <Card className="width" bg="light" text="dark" style={{ height: '26rem', paddingLeft: 20 }}>
-            <Card.Body>
-              <Card.Text style={{ fontSize: 60 }}><b>Hello</b></Card.Text>
-              <Card.Text style={{ fontSize: 20 }}><b>I am Danny Ng!</b></Card.Text>
-              <Button variant="primary" className="button"><Link to="/resume" className="navbar-link"><b>Resume</b></Link></Button>
-                <Button variant="primary" className="button button-secondary" style={{ marginLeft: 10 }}><Link to="/projects" className="navbar-link"><b>Projects</b></Link></Button>
-              <Card.Text className="mt-4">
-                I am a student at Nanyang Technological University studying Electrical and Electronic Engineering. Started delving into programming in mid 2020, and always been
-                trying to improve myself in every aspect.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      )
-    } else {
-      return (
-        <Col className="card margin-left" sm={4}>
-          <Card className="width" bg="light" text="dark" style={{ height: '26rem', paddingLeft: 20 }}>
-            <Card.Body>
-              <Card.Text style={{ fontSize: 78 }}><b>Hello</b></Card.Text>
-              <Card.Text style={{ fontSize: 28 }}><b>I am Danny Ng!</b></Card.Text>
-              <Button variant="primary" className="button"><Link to="/resume" className="navbar-link"><b>Resume</b></Link></Button>
-              <Button variant="primary" className="button button-secondary" style={{ marginLeft: 10 }}><Link to="/projects" className="navbar-link"><b>Projects</b></Link></Button>
-              <Card.Text className="mt-4">
-                I am a student at Nanyang Technological University studying Electrical and Electronic Engineering. Started delving into programming in mid 2020, and always been
-                trying to improve myself in every aspect.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      )
-    }
-  }
-
-  const MainCardComponent = () => {
-    if (size.width < 700) {
-      return (
-        <Col className="card" sm={{ span: 3, offset: 2 }} md={3}>
-          <Card bg="secondary" text="dark" className="card card-shadow" style={{ width: '20rem', height: '22rem' }}>
-            <Card.Body className="align-self-center">
-              <Card.Img src={image} className="image" />
-              <Card.Title as="h4" className="text-center">Danny Ng</Card.Title>
-              <Container>
-                <Row>
-                  <Col></Col>
-                  <Col>
-                    <Card.Text className="padding mt-2"></Card.Text>
-                  </Col>
-                  <Col></Col>
-                </Row>
-              </Container>
-              <div className="mt-4">
-                <Button variant="primary" className="small-button"><Link to="/resume" className="navbar-link"><b>Resume</b></Link></Button>
-                <Button variant="primary" className="small-button button-secondary" style={{ marginLeft: 10 }}><Link to="/projects" className="navbar-link"><b>Projects</b></Link></Button>
-              </div>
-            </Card.Body>
-          </Card>
-        </Col>
-      )
-    } 
-    if (size.width > 700 && size.width < 800 ) {
-      return (
-        <Col className="card" sm={3} md={3} style={{ marginRight: -5 }}>
-        <Card bg="secondary" text="dark" className="card card-shadow" style={{ width: '20rem', height: '26rem' }}>
+    return (
+      <CardGroup>        
+        <Card bg="secondary" text="dark" className="card card-shadow" style={{ width: '20rem' }}>
           <Card.Body className="align-self-center">
             <Card.Img src={image} className="image mt-2" />
             <Card.Title as="h4" className="text-center">Danny Ng</Card.Title>
@@ -112,30 +34,21 @@ const About = () => {
             <Card.Text className="text-center mt-4" style={{ fontSize: 18 }}>Final Year Student</Card.Text>
           </Card.Body>
         </Card>
-      </Col>
-      )
-    } else {
-      return (
-        <Col className="card" sm={{ span: 3, offset: 2 }} md={3} style={{ marginRight: -5 }}>
-          <Card bg="secondary" text="dark" className="card card-shadow" style={{ width: '20rem', height: '26rem' }}>
-            <Card.Body className="align-self-center">
-              <Card.Img src={image} className="image mt-2" />
-              <Card.Title as="h4" className="text-center">Danny Ng</Card.Title>
-              <Container>
-                <Row>
-                  <Col></Col>
-                  <Col>
-                    <Card.Text className="padding mt-3"></Card.Text>
-                  </Col>
-                  <Col></Col>
-                </Row>
-              </Container>
-              <Card.Text className="text-center mt-4" style={{ fontSize: 18 }}>Final Year Student</Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-      )
-    }
+        <Card className="width" bg="light" text="dark" style={{ width: '20rem' }}>
+          <Card.Body>
+            <Card.Text style={{ fontSize: 78 }}><b>Hello</b></Card.Text>
+            <Card.Text style={{ fontSize: 28 }}><b>I am Danny Ng!</b></Card.Text>
+            <Button variant="primary" className="button"><Link to="/resume" className="navbar-link"><b>Resume</b></Link></Button>
+            <Button variant="primary" className="button button-secondary" style={{ marginLeft: 10 }}><Link to="/projects" className="navbar-link"><b>Projects</b></Link></Button>
+            <Card.Text className="mt-4">
+              I am a student at Nanyang Technological University studying Electrical and Electronic Engineering. Started delving into programming in mid 2020, and always been
+              trying to improve myself in every aspect.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
+      </CardGroup>
+    )
   }
 
   return (
@@ -143,7 +56,6 @@ const About = () => {
       <div className={size.width < 700 || size.height < 400 ? "background-img" : "background-img vh-100"} style={{ backgroundImage:`url(${bgimage})`, margin: 0, padding: 0, backgroundAttachment: 'fixed' }}>
         <Container className={size.width < 700 || size.height < 400 ? "d-flex" : "d-flex vh-100"}>
           <Row className="m-auto align-self-center">
-            <MainCardComponent />
             <CardComponent />
           </Row>
         </Container>
