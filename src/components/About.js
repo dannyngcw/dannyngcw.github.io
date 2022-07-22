@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Card, Container, Row, Col, Button, CardGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group'
@@ -31,7 +31,7 @@ const About = () => {
                 <Col></Col>
               </Row>
             </Container>
-            <Card.Text className="text-center mt-4" style={{ fontSize: 18 }}>Final Year Student</Card.Text>
+            <Card.Text className="text-center mt-4" style={{ fontSize: 18 }}>Fresh Graduate</Card.Text>
           </Card.Body>
         </Card>
         <Card className="width" bg="light" text="dark" style={{ width: '20rem' }}>

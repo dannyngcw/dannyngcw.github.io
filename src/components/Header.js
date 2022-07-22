@@ -11,7 +11,7 @@ const Header = () => {
           <Navbar.Brand href="/" className="navtitle">
             <Row className="small-screen">
               <Col className="justify-content-center"><b>Danny Ng</b></Col>
-              <Col className="name"> &nbsp;/ &nbsp;Final Year Student</Col>
+              <Col className="name"> &nbsp;/ &nbsp;Fresh Graduate</Col>
             </Row>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
