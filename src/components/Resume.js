@@ -41,7 +41,7 @@ const Resume = () => {
                 <Card.Text style={{ margin: 0, fontSize: 14}}><b>Software Engineer Intern</b></Card.Text>
                 <Card.Text style={{fontSize: 14}}>PICKUPP</Card.Text>
                 <ul>
-                  <li>Wrote and optimised new front-end functionality on their Warehouse mobile application using React Native to enhance user interface and experience.</li>
+                  <li>Written and optimised new front-end functionality on their Warehouse mobile application using React Native to enhance user interface and experience.</li>
                   <li>Successfully presented my findings and solutions to large audience including senior executives and stakeholders.</li>
                   <li>Effectively addressed complex bugs using Reactotron and other tools.</li>
                   <li>Worked with various developer tools such as Node,js, Docker and PostgresSQL.</li>

@@ -41,7 +41,7 @@ const About = () => {
             <Button variant="primary" className="button"><Link to="/resume" className="navbar-link"><b>Resume</b></Link></Button>
             <Button variant="primary" className="button button-secondary" style={{ marginLeft: 10 }}><Link to="/projects" className="navbar-link"><b>Projects</b></Link></Button>
             <Card.Text className="mt-4">
-              I am a student at Nanyang Technological University studying Electrical and Electronic Engineering. Started delving into programming in mid 2020, and always been
+              I have recently graduated from Nanyang Technological University with an Electrical and Electronic Engineering degree. Started delving into programming in mid 2020, and always been
               trying to improve myself in every aspect.
             </Card.Text>
           </Card.Body>

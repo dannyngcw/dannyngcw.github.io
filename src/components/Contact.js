@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Card, Container, Row, Col, Button, Form, FloatingLabel } from 'react-bootstrap';
+import { Alert, Card, Container, Col, Button, Form, FloatingLabel, Row } from 'react-bootstrap';
 import { CSSTransition } from 'react-transition-group'
 import bgimage from '../images/resume.png';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -24,6 +24,8 @@ const Contact = () => {
     message: "",
   });
 
+  const [alert, setAlert] = useState(false)
+
   const { fname, lname, mail } = empty;
 
   const { firstname, lastname, email, subject, message } = data;
@@ -47,11 +49,30 @@ const Contact = () => {
         },
         body: JSON.stringify([[ firstname, lastname, email, subject, message, new Date().toLocaleString()]]),
       });
-      await response.json();
+      let data = await response.json();
+      if (response.status == 200) {
+          setTimeout(() => {
+            setAlert((prevState) => !prevState)
+          }, 4000)
+
+          setAlert((prevState) => !prevState)
+
+      }
       setData({ ...data, firstname: "", lastname: "", email: "", subject: "", message: "", })
     } catch (err) {
-      console.log(err)
+      console.log('error:', err.message)
     }
+  }
+
+  const AlertComponent = () => {
+    if (alert) {
+      return (
+        <Alert className="mt-5" variant="success">
+          Thank you for contacting me, I'll get back to you soon.
+        </Alert>
+      );
+    }
+    else {return null}
   }
   
     return (
@@ -61,6 +82,7 @@ const Contact = () => {
             <Row>
               <Col></Col>
               <Col>
+                <AlertComponent/>
                 <Card.Title className="text-center m-5" style={{ fontSize: 40 }}>Contact Me</Card.Title>
               </Col>
               <Col></Col>

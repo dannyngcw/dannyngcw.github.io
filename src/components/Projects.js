@@ -36,7 +36,7 @@ const Projects = () => {
             <Col className="card card-shadow" sm={4}>
               <Card>
                 <Card.Title className="mt-5 mb-3 project-marker" style={{ fontSize: 18 }}>Blockchain and Machine Learning applications for Smart Grids (FYP)</Card.Title>
-                <Card.Text className="m-4">I have implemented a double auction market for energy trading leveraging on blockchain technology.<br/>(Work in Progress)</Card.Text>
+                <Card.Text className="m-4">I have implemented a double auction market for energy trading leveraging on blockchain technology.</Card.Text>
               </Card>
             </Col>
             <Col className="card" sm={3}>
